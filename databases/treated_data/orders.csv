@@ -1,1 +1,1 @@
-"id", "seller_customer_id", "buyer_customer_id", "product_id", "review_id"
+"id", "customer_id", "seller_id", "product_id", "review_id"
