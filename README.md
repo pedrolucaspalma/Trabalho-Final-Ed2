@@ -5,3 +5,21 @@ Repositório contendo o trabalho final da disciplina de Estruturas de Dados 2 - 
 ## Direcionamentos
 
 - As bases de dados usadas no trabalho estão no caminho  "databases/crude_data" e foram extraídas de https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce?select=olist_order_items_dataset.csv
+- Para a visualização do projeto recomendamos o download de Python 3.10 ou de sua versão mais recente
+
+## Membros da Equipe e Atribuições
+
+- Luana Chaves (gerente) - Documentação
+- Rômulo Pastore - Documentação
+- Pedro Lucas Barros - Programação
+- André Pimentel - Programação
+- Yuri Campos - Visualização Gráfica
+
+## Estrutura e Ferramentas do Projeto
+
+Este trabalho irá abordar a estrutura de dados de um grafo e sua visualização. 
+
+A linguagem que será utilizada para programar o algoritmo do trabalho será Python. Diante disso, a biblioteca utilizada para manipulação e análise dos dados será Pandas. Dentre outras ferramentas que serão utilizadas será o Jupyter Notebook e a visualização gráfica será na linguagem C#, e será feita na plataforma da Unity.
+
+
+
