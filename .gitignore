@@ -104,3 +104,4 @@ dist
 .tern-port
 
 databases/consultas_de_codigo
+**/__pycache__
