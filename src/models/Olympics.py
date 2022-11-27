@@ -12,3 +12,5 @@ class Olympics:
 
         def add_result(self, result):
             self.results.append(result)
+
+        # def find_country(self, country_name):
