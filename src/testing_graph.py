@@ -16,15 +16,19 @@ olympics.add_country(france)
 olympics.add_discipline(archery)
 olympics.add_result(france_archery)
 
-for country in olympics.countries:
-    print(country)
+c2 = Country(datarows[32]['Country'])
+olympics.add_country(c2)
 
-for discipline in olympics.disciplines:
-    print(discipline)
+# for country in olympics.countries:
+#     print(country)
 
-for result in olympics.results:
-    print(result)
+# for discipline in olympics.disciplines:
+#     print(discipline)
 
+# for result in olympics.results:
+#     print(result)
+
+olympics.visualize()
 
 
 
