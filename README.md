@@ -20,11 +20,40 @@ Para a exucação do projeto é necessário e/ou recomendado ter instalado os se
 
 ## Membros da Equipe e Atribuições
 
-- Luana Chaves (gerente) - Documentação
-- Rômulo Pastore - Documentação
-- Pedro Lucas Barros - Programação
-- André Pimentel - Programação
-- Yuri Campos - Visualização Gráfica
+<table border="0">
+  <tr>
+    <td valign="top">
+      <div display="flex" align="center">
+        <img style="width: 120px; border-radius: 50%" src="https://avatars.githubusercontent.com/u/72577690?v=4">
+        <p><a href="https://github.com/luawah">Luana Chaves (gerente) - Documentação</a></p>
+      </div>
+    </td>
+    <td valign="top">
+      <div display="flex" align="center">
+        <img width="120px" src="https://avatars.githubusercontent.com/u/88741244?s=400&u=30e2e99d44582141a92584ce9c8e7501e70c4059&v=4">
+        <p><a href="https://github.com/Romumoon">Rômulo Pastore - Documentação</a></p>
+      </div>
+    </td>
+    <td valign="top">
+      <div display="flex" align="center">
+        <img width="120px" src="https://avatars.githubusercontent.com/u/60949512?v=4">
+        <p><a href="https://github.com/pedrolucaspalma">Pedro Lucas Barros - Programação</a></p>
+      </div>
+    </td>
+    <td valign="top">
+      <div display="flex" align="center">
+        <img width="120px" src="https://avatars.githubusercontent.com/u/94861303?v=4">
+        <p><a href="https://github.com/Amdore">André Pimentel - Programação</a></p>
+      </div>
+    </td>
+    <td valign="top">
+      <div display="flex" align="center">
+        <img width="120px" src="https://avatars.githubusercontent.com/u/62523486?v=4">
+        <p><a href="https://github.com/Yuri-Campos">Yuri Campos - Visualização Gráfica</a></p>
+      </div>
+    </td>
+  </tr>
+</table>
 
 ## Estrutura e Ferramentas do Projeto
 
