@@ -1,9 +1,9 @@
 class Result:
-    def __init__(self, country, division, total_medals):
+    def __init__(self, country, discipline, total_medals):
         self.country = country;
-        self.division = division;
+        self.discipline = discipline;
         self.total_medals = total_medals;
 
     def __str__(self):
-        return f"country: {self.country}, division:{self.division}, total_medals:{self.total_medals}"
+        return f"{self.country.name} has gotten {self.total_medals} on discipline '{self.discipline.name}'"
         

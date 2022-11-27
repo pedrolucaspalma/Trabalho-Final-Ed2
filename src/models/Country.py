@@ -7,7 +7,7 @@ class Country:
         return f"Country: <name: {self.name}, results:{self.results}>"
 
     def add_result(self, result):
-        self.results = self.results.append(result)
+        self.results.append(result)
 
     # def remove_result(self, result):
     #     self.results
