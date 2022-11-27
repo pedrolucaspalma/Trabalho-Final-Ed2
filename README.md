@@ -1,4 +1,7 @@
-![giphy](https://user-images.githubusercontent.com/72577690/204153758-1709f6b2-0952-430a-9990-ba85ee6e1afe.gif)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/72577690/204153758-1709f6b2-0952-430a-9990-ba85ee6e1afe.gif" />
+</p>
 
 # Trabalho-Final-Ed2
 
