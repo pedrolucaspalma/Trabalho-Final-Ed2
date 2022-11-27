@@ -15,9 +15,5 @@ beijing_data = original_csv_df[original_csv_df['Year'] == 2008]
 # Grouping the rows so we can get a count of medals for each country by each discipline
 beijing_data_country_sum = beijing_data.groupby(by=['Discipline','Country'])["Medal"].count().reset_index()
 
-
-
-
-print()
-
-# for index, row in beijing_data_country_sum.iterrows():
+# Transforming the last Series into a List of Dictionaries
+datarows = beijing_data_country_sum.to_dict('records');
