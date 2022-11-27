@@ -1,3 +1,5 @@
+![giphy](https://user-images.githubusercontent.com/72577690/204153758-1709f6b2-0952-430a-9990-ba85ee6e1afe.gif)
+
 # Trabalho-Final-Ed2
 
 Repositório contendo o trabalho final da disciplina de Estruturas de Dados 2 - 2022.2
