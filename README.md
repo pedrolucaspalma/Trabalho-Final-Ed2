@@ -7,12 +7,11 @@ Para a exucação do projeto é necessário e/ou recomendado ter instalado os se
 - Python 3.10 ou superior
 - Jupyter Notebook
 - Pandas
-- Excel
+- Excel, ou outro visualizador de CSV de sua escolha
 
 ## Direcionamentos
 
 - As bases de dados usadas no trabalho estão no caminho  "databases/crude_data" e foram extraídas de https://www.kaggle.com/datasets/divyansh22/summer-olympics-medals 
-- Para a visualização do projeto recomendamos o download de Python 3.10 ou de sua versão mais recente
 
 ## Membros da Equipe e Atribuições
 
