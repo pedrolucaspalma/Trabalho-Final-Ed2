@@ -30,9 +30,14 @@ Para a exucação do projeto é necessário e/ou recomendado ter instalado os se
 
 Este trabalho irá abordar a estrutura de dados de um grafo e sua visualização. 
 
-A linguagem que será utilizada para programar o algoritmo do trabalho será Python. Diante disso, a biblioteca utilizada para manipulação e análise dos dados será Pandas. Dentre outras ferramentas que serão utilizadas será o Jupyter Notebook e a visualização gráfica será na linguagem C#, e será feita na plataforma da Unity.
+A linguagem que será utilizada para programar o algoritmo do trabalho será Python. Diante disso, as bibliotecas utilizadas serão:
 
-Durante a execução, será feita a leitura dos CSVs presentes nesse repositório, que implicará na geração de um grafo que será visualizado via Unity.
+- Pandas - Para manipulação e análise dos dados; 
+- Jupyter Notebook - Para testes com o código;
+- Networkx - Para criar a visualização do grafo gerado; 
+- Matplotlib - Para visualização dos dados.
+
+Durante a execução, será feita a leitura dos CSVs presentes nesse repositório, que implicará na geração de um grafo que será visualizado via (inserir algo aqui futuramente)
 
 
 
