@@ -2,6 +2,13 @@
 
 Repositório contendo o trabalho final da disciplina de Estruturas de Dados 2 - 2022.2
 
+## Especificações Técnicas
+Para a exucação do projeto é necessário e/ou recomendado ter instalado os seguintes softwares:
+- Python 3.10 ou superior
+- Jupyter Notebook
+- Pandas
+- Excel
+
 ## Direcionamentos
 
 - As bases de dados usadas no trabalho estão no caminho  "databases/crude_data" e foram extraídas de https://www.kaggle.com/datasets/divyansh22/summer-olympics-medals 
