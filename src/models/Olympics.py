@@ -45,11 +45,13 @@ class Olympics:
         def visualize(self):
             graph = nx.Graph()
 
+            plt.figure(figsize=(18,18))
+
             colors = self.create_nodes(graph)
             self.create_edges(graph)
 
             nx.draw_networkx(
-                G=graph,
+                graph,
                 node_color=colors,
                 node_size=150,
                 width=0.5,
