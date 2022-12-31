@@ -18,9 +18,16 @@ class Olympics:
         def add_result(self, result):
             self.results.append(result)
 
+        def find_country(self, country_name):
+            for country in self.countries:
+                if country.name == country_name: return country
+
+        def find_discipline(self, discipline_name):
+            for discipline in self.disciplines:
+                if discipline.name == discipline_name: return discipline
+
         def create_nodes(self, graph):
             colors = []
-            
             for country in self.countries:
                 graph.add_node(country.name)
                 colors.append("green")
@@ -41,5 +48,11 @@ class Olympics:
             colors = self.create_nodes(graph)
             self.create_edges(graph)
 
-            nx.draw_networkx(G=graph, node_color=colors)
+            nx.draw_networkx(
+                G=graph,
+                node_color=colors,
+                node_size=150,
+                width=0.5,
+                font_size=9
+                )
             plt.show()
