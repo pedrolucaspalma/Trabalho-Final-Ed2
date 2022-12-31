@@ -18,19 +18,28 @@ class Olympics:
         def add_result(self, result):
             self.results.append(result)
 
+        def create_nodes(self, graph):
+            colors = []
+            
+            for country in self.countries:
+                graph.add_node(country.name)
+                colors.append("green")
+
+            for discipline in self.disciplines:
+                graph.add_node(discipline.name)
+                colors.append("blue")
+
+            return colors
+
+        def create_edges(self, graph):
+            for result in self.results:
+                graph.add_edge(result.country.name, result.discipline.name, weight=result.total_medals)
+
         def visualize(self):
             graph = nx.Graph()
 
-            countries = self.countries
-            graph.add_nodes_from(map(lambda country:  (country.name, {"color": "red"}), countries))
+            colors = self.create_nodes(graph)
+            self.create_edges(graph)
 
-            disciplines = self.disciplines
-            graph.add_nodes_from(map(lambda discipline: (discipline.name, {"color":"green"}), disciplines))
-
-            # results = self.results
-            # graph.add_weighted_edges_from(map(lambda result: [result.country, result.discipline, result.total_medals], results))
-
-            nx.draw_networkx(G=graph)
+            nx.draw_networkx(G=graph, node_color=colors)
             plt.show()
-            
-        # def find_country(self, country_name):
