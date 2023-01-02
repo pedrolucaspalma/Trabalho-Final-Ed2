@@ -44,7 +44,6 @@ class Olympics:
                 O nome do país
 
             Busca simples em Array para encontrar um país a partir da classe Olympics.
-
             """
             for country in self.countries:
                 if country.name == country_name: return country
