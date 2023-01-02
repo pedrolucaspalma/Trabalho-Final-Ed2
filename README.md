@@ -20,9 +20,10 @@ Para a execução do projeto é necessário e/ou recomendado ter instalado os se
 - A base de dados usada no trabalho está no caminho "database/Summer-Olympic-medals-1976-to-2008.csv" e foi extraída de https://www.kaggle.com/datasets/divyansh22/summer-olympics-medals
 
 - Para rodar o código:
-  1. Abra a pasta base do projeto no terminal.
-  2. Na raíz da pasta execute `cd src`
-  3. Em seguida, execute `python3 main.py`
+  1. Se certifique que as bibliotecas Pandas, Pyplot e Networkx necessárias para a execução do projeto estão instaladas.
+  2. Abra a pasta base do projeto no terminal.
+  3. Na raíz da pasta execute `cd src`
+  4. Em seguida, execute `python3 main.py`
 
 ## Membros da Equipe e Atribuições
 
