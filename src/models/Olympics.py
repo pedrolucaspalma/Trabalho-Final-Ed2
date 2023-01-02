@@ -16,10 +16,15 @@ class Olympics:
         Possui métodos para buscar, adicionar e remover nós, além de uma visualização gráfica com as bibliotecas networkx e pyplot. 
         """
         def __init__(self):
-            self.countries = [];
+            # Os vetores de países e modalidades são meramente auxiliares para facilitar a construção da ilustração do grafo com cores separadas.
+            self.countries = []; 
             self.disciplines = [];
-            self.total_nodes = [];
+            # Vetor utilizado para armazenar as arestas totais do grafo. Novamente, apenas usado para construção da ilustração do grafo.
             self.results = [];
+
+            # Vetor principal utilizado para armazenar os nós do grafo para utilizar nos algoritmos de DFS e BFS
+            self.total_nodes = [];
+
 
         def add_country(self, country):
             self.countries.append(country);
