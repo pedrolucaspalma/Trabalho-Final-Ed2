@@ -25,7 +25,6 @@ class Olympics:
             # Vetor principal utilizado para armazenar os nós do grafo para utilizar nos algoritmos de DFS e BFS
             self.total_nodes = [];
 
-
         def add_country(self, country):
             self.countries.append(country);
             self.total_nodes.append(country);
@@ -101,6 +100,28 @@ class Olympics:
 
             print("Vértice não encontrado.")
 
+        def find_node_dfs(self, node_name):
+            """
+            Parameters
+            ----------
+            node_name: str
+                O nome do vértice (País ou Modalidade)
+
+            Busca por um vertice utilizando busca por profundidade (Depth First Search).
+            """
+        # TODO
+
+        def delete_node(self, node_name):
+            """
+            Parameters
+            ----------
+            node_name: str
+                O nome do vértice (País ou Modalidade)
+
+            Remoção de um vertice.
+            """
+        #TODO
+
         def create_nodes(self, graph):
             colors = []
             for country in self.countries:
@@ -111,6 +132,7 @@ class Olympics:
                 graph.add_node(discipline.name)
                 colors.append("blue")
 
+            #TODO Chamar o método plt.show() de novo com o grafo atualizado
             return colors
 
         def create_edges(self, graph):
