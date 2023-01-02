@@ -5,5 +5,5 @@ class Result:
         self.total_medals = total_medals;
 
     def __str__(self):
-        return f"{self.country.name} has gotten {self.total_medals} medals on discipline '{self.discipline.name}'"
+        return f"{self.country.name} conseguiu {self.total_medals} medalhas na modalidade '{self.discipline.name}'"
         
