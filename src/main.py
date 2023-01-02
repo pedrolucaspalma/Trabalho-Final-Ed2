@@ -1,11 +1,15 @@
 from get_data import datarows
+
 from models.Country import Country
 from models.Discipline import Discipline
 from models.Result import Result
 from models.Olympics import Olympics
 
+from displaying_algorithms import run_algorithms
+
 olympics = Olympics()
 
+# Preenchendo o grafo com vértices:
 for row in datarows:
     country_name = row['Country']
     discipline_name = row['Discipline']
@@ -27,4 +31,9 @@ for row in datarows:
     discipline.add_result(result)
     olympics.add_result(result)
 
+# Testando os algoritmos de busca:
+run_algorithms(olympics)
+
+# Criando a visualização
 olympics.visualize()
+

@@ -1,6 +1,9 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 
+from models.Country import Country
+from models.Discipline import Discipline
+
 class Olympics:
         """ 
         Classe base para armazenar os dados do grafo em memória.
@@ -15,15 +18,16 @@ class Olympics:
         def __init__(self):
             self.countries = [];
             self.disciplines = [];
-            self.results = []
+            self.total_nodes = [];
+            self.results = [];
 
         def add_country(self, country):
-            """
-            """
             self.countries.append(country);
+            self.total_nodes.append(country);
 
         def add_discipline(self, discipline):
             self.disciplines.append(discipline);
+            self.total_nodes.append(discipline);
 
         def add_result(self, result):
             self.results.append(result)
@@ -52,6 +56,45 @@ class Olympics:
             """
             for discipline in self.disciplines:
                 if discipline.name == discipline_name: return discipline
+
+        def find_node_bfs(self, node_name):
+            """
+            Parameters
+            ----------
+            node_name: str
+                O nome do vértice (País ou Modalidade)
+
+            Busca por um vertice utilizando busca por largura (Breadth First Search).
+            """
+            if len(self.total_nodes) == 0:
+                return print("O grafo não possui vértices!")
+
+            initial_node = self.total_nodes[0]
+            queue = []
+            visited = []
+
+            queue.append(initial_node)
+            visited.append(initial_node)
+
+            while queue:
+                current = queue.pop(0)
+
+                for result in current.results:
+                    if isinstance(current, Discipline):
+                        if result.country.name == node_name: return result.country
+
+                        if result.country not in visited:
+                            visited.append(result.country)
+                            queue.append(result.country)
+                        
+                    if isinstance(current, Country):
+                        if result.discipline.name == node_name: return result.discipline
+
+                        if result.discipline not in visited:
+                            visited.append(result.discipline)
+                            queue.append(result.discipline)
+
+            print("Vértice não encontrado.")
 
         def create_nodes(self, graph):
             colors = []
