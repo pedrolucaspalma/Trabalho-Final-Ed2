@@ -1,3 +1,0 @@
-# Aqui fica as docs
-
-https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo
