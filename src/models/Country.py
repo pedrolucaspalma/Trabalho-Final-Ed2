@@ -9,6 +9,4 @@ class Country:
     def add_result(self, result):
         self.results.append(result)
 
-    # def remove_result(self, result):
-    #     self.results
-        
+ 
