@@ -14,6 +14,7 @@ for row in datarows:
     country_name = row['Country']
     discipline_name = row['Discipline']
     total_medals = row['Medal']
+    olympics_ed = row['Year']
 
     country = olympics.find_country(country_name);
     if bool(country) is False:
@@ -26,7 +27,7 @@ for row in datarows:
         olympics.add_discipline(discipline)
     
 
-    result = Result(country, discipline, row['Medal'])
+    result = Result(country, discipline, row['Medal'], row['Year'])
     country.add_result(result)
     discipline.add_result(result)
     olympics.add_result(result)
