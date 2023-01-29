@@ -23,8 +23,8 @@ def menu(olympics):
     
 
     while(option != 0):
-        print("Busca em Grafos: Olimpíadas:\nopções:\n1-Definir Modalidade\n2-Definir país\n3-Buscar\n4-Mostrar resultado de busca")
-        option = int(input(" "))
+        print("Busca em Grafos: Olimpíadas:\nOpções:\n1-Definir Modalidade\n2-Definir País\n3-Buscar\n4-Mostrar Resultado de Busca")
+        option = int(input("Opção: "))
         match option:
             case 1:
                 discpline = str(input("modalidade: "))
@@ -34,7 +34,7 @@ def menu(olympics):
                 
             case 3:
                 result_search = olympics.find_node_bfs(country)
-                print(result_search)
+                #print(result_search)
                 
             case 4:
                 for i in result_search.results:
