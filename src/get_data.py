@@ -10,10 +10,10 @@ encoding='latin-1'
 original_csv_df = pd.read_csv(original_table, usecols=original_cols, encoding=encoding )
 
 # Filtering data to only contain rows from Beijing 2008 Olympics
-beijing_data = original_csv_df[original_csv_df['Year'] == 2008]
+#beijing_data = original_csv_df[original_csv_df['Year'] == 2008]
 
 # Grouping the rows so we can get a count of medals for each country by each discipline
-beijing_data_country_sum = beijing_data.groupby(by=['Discipline','Country'])["Medal"].count().reset_index()
+original_csv_df = original_csv_df.groupby(by=['Year','Discipline','Country'])["Medal"].count().reset_index()
 
 # Transforming the last Series into a List of Dictionaries
-datarows = beijing_data_country_sum.to_dict('records');
+datarows = original_csv_df.to_dict('records');
