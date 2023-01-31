@@ -28,14 +28,17 @@ def menu(olympics):
                 olympics.print_nodes_names_in_terminal("country")
             case 7:
                 olympics.print_nodes_names_in_terminal("discipline")
-
+            case 0:
+                print("Programa encerrado")
             
+            case _:
+                print("Input Invalido")
 
 def print_options(discipline_name, country_name):
     print("****************************************************************************************")
     print("Busca em Grafos Olimpíadas:")
     print("Opções:")
-    print(f'1-Definir Modalidade. Atual: {discipline_name}') if discipline_name != "" else print(f'1-Definir Modalidade.')
+    print(f'1-Definir Modalidade. Atual: {discipline_name}') if discipline_name != "" else print(f'1-Definir Modalidade')
     print(f'2-Definir País. Atual: {country_name}') if country_name != "" else print(f'2-Definir País')
     print("3-Mostrar Resultado de Busca")
     print("4-Limpar inputs anteriores")
