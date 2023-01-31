@@ -28,10 +28,12 @@ def menu(olympics):
                 discipline_name = str(input("modalidade: "))
                 if discipline_name != olympics.verify_discipline_name(discipline_name):
                     print("Modalidade não existe")
+                    discipline_name = ""
             case 2:
                 country_name = str(input("País: "))
                 if country_name != olympics.verify_country_name(country_name):
-                    print("País não existe")    
+                    print("País não existe")
+                    country_name=""    
             case 3:
                 print("País",country_name, "encontrado\n")
                 print("Modalidade",discipline_name, "encontrada\n")
@@ -48,6 +50,9 @@ def print_options(discipline_name, country_name):
     print("Opções:")
     print(f'1-Definir Modalidade. Atual: {discipline_name}') if discipline_name != "" else print(f'1-Definir Modalidade.')
     print(f'2-Definir País. Atual: {country_name}') if country_name != "" else print(f'2-Definir País')
-    print("3-Buscar\n4-Mostrar Resultado de Busca\n5-Limpar inputs anteriores\n\n0- Encerrar Programa.")
-            
+    print("3-Buscar")
+    print("4-Mostrar Resultado de Busca")
+    print("5-Limpar inputs anteriores")
+    print("\n")
+    print("0- Encerrar Programa.")
 
