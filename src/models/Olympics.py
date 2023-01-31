@@ -25,6 +25,9 @@ class Olympics:
             # Vetor principal utilizado para armazenar os nós do grafo para utilizar nos algoritmos de DFS e BFS
             self.total_nodes = [];
 
+        def get_results():
+            return results
+        
         def add_country(self, country):
             self.countries.append(country);
             self.total_nodes.append(country);
@@ -35,6 +38,14 @@ class Olympics:
 
         def add_result(self, result):
             self.results.append(result)
+
+        def verify_country_name(self, country_name) -> str:
+            for country in self.countries:
+                if country.name == country_name: return country.name
+
+        def verify_discipline_name(self, discipline_name) -> str:
+            for discipline in self.disciplines:
+                if discipline.name == discipline_name: return discipline.name
 
         def find_country(self, country_name):
             """
@@ -59,6 +70,12 @@ class Olympics:
             """
             for discipline in self.disciplines:
                 if discipline.name == discipline_name: return discipline
+        
+        def performance(self, country_name: str, discipline_name: str) -> None:
+            for i in self.results:
+                if i.discipline == discipline_name and i.country == country_name:
+                    print(i)
+
 
         def find_node_bfs(self, node_name):
             """

@@ -23,21 +23,23 @@ def menu(olympics):
     
 
     while(option != 0):
-        print("Busca em Grafos: Olimpíadas:\nOpções:\n1-Definir Modalidade\n2-Definir País\n3-Buscar\n4-Mostrar Resultado de Busca")
+        print("Busca em Grafos Olimpíadas:\nOpções:\n1-Definir Modalidade\n2-Definir País\n3-Buscar\n4-Mostrar Resultado de Busca")
         option = int(input("Opção: "))
         match option:
             case 1:
-                discpline = str(input("modalidade: "))
-                
+                discipline = str(input("modalidade: "))
+                if discipline != olympics.verify_discipline_name(discipline):
+                    print("Modalidade não existe")
             case 2:
                 country = str(input("País: "))
-                
+                if country != olympics.verify_country_name(country):
+                    print("País não existe")    
             case 3:
-                result_search = olympics.find_node_bfs(country)
-                #print(result_search)
-                
+                print("País",country, "encontrado\n")
+                print("Modalidade",discipline, "encontrada\n")
             case 4:
-                for i in result_search.results:
-                    print(i)
+                olympics.performance(country, discipline)
+
+            
                
 

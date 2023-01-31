@@ -7,4 +7,8 @@ class Result:
 
     def __str__(self):
         return f"{self.country.name} conseguiu {self.total_medals} medalhas na modalidade '{self.discipline.name}' nas olimpiadas de '{self.year}'"
-        
+    
+    def getCountry():
+        return country
+    def getDiscipline():
+        return discipline
