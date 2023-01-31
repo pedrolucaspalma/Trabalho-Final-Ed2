@@ -25,8 +25,8 @@ class Olympics:
             # Vetor principal utilizado para armazenar os nós do grafo para utilizar nos algoritmos de DFS e BFS
             self.total_nodes = [];
 
-        def get_results():
-            return results
+        def get_results(self):
+            return self.results
         
         def add_country(self, country):
             self.countries.append(country);

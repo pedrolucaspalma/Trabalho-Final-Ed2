@@ -35,13 +35,13 @@ def menu(olympics):
                     print("País não existe")
                     country_name=""    
             case 3:
-                print("País",country_name, "encontrado\n")
-                print("Modalidade",discipline_name, "encontrada\n")
-            case 4:
                 olympics.performance(country_name, discipline_name)
-            case 5:
+            case 4:
                 discipline_name = ""
                 country_name = ""
+            case 5: 
+                olympics.visualize()
+
             
 
 def print_options(discipline_name, country_name):
@@ -50,9 +50,10 @@ def print_options(discipline_name, country_name):
     print("Opções:")
     print(f'1-Definir Modalidade. Atual: {discipline_name}') if discipline_name != "" else print(f'1-Definir Modalidade.')
     print(f'2-Definir País. Atual: {country_name}') if country_name != "" else print(f'2-Definir País')
-    print("3-Buscar")
-    print("4-Mostrar Resultado de Busca")
-    print("5-Limpar inputs anteriores")
+    print("3-Mostrar Resultado de Busca")
+    print("4-Limpar inputs anteriores")
+    print("\n")
+    print("5-Mostrar grafo")
     print("\n")
     print("0- Encerrar Programa.")
 

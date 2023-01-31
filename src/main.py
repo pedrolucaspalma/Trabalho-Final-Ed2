@@ -5,7 +5,6 @@ from models.Discipline import Discipline
 from models.Result import Result
 from models.Olympics import Olympics
 
-#from displaying_algorithms import run_algorithms
 from displaying_algorithms import menu
 
 olympics = Olympics()
@@ -34,9 +33,4 @@ for row in datarows:
     olympics.add_result(result)
 
 # Testando os algoritmos de busca:
-#run_algorithms(olympics)
 menu(olympics)
-
-# Criando a visualização
-olympics.visualize()
-
