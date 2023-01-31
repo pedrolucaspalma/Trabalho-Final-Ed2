@@ -126,48 +126,6 @@ class Olympics:
 
             print("Vértice não encontrado.")
 
-        def find_node_dfs(self, node_name):
-            """
-            Parameters
-            ----------
-            node_name: str
-                O nome do vértice (País ou Modalidade)
-
-            Busca por um vertice utilizando busca por profundidade (Depth First Search).
-            """
-
-           # A standard Depth-First Search implementation puts every vertex of the graph
-           #  into one in all 2 categories: 1) Visited 2) Not Visited. 
-
-            not_visited = []
-            visited = []
-           
-           # The only purpose of this algorithm is to visit all the vertex of the graph avoiding cycles.
-
-           #1.We will start by putting any one of the graph's vertex on top of the stack.
-            initial_node = self.total_nodes[0]
-            not_visited.append(initial_node)
-            
-           #2.After that take the top item of the stack and add it to the visited list of the vertex
-
-            visited.append(not_visited.pop)
-
-            #3.Next, create a list of that adjacent node of the vertex. Add the ones which aren't in the visited list of vertexes to the top of the stack.
-
-            #4.Lastly, keep repeating steps 2 and 3 until the stack is empty
-        # TODO
-
-        def delete_node(self, node_name):
-            """
-            Parameters
-            ----------
-            node_name: str
-                O nome do vértice (País ou Modalidade)
-
-            Remoção de um vertice.
-            """
-        #TODO
-
         def create_nodes(self, graph):
             colors = []
             for country in self.countries:
