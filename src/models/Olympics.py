@@ -178,7 +178,6 @@ class Olympics:
                 graph.add_node(discipline.name)
                 colors.append("blue")
 
-            #TODO Chamar o método plt.show() de novo com o grafo atualizado
             return colors
 
         def create_edges(self, graph):
