@@ -78,7 +78,7 @@ class Olympics:
             performance_results = []
             for result in self.results:
                 if result.discipline.name == discipline_name and result.country.name == country_name:
-                    performance_results.push(result)
+                    performance_results.append(result)
 
             if(len(performance_results) == 0):
                 print(f'{country_name} nunca competiu em {discipline_name}.')
