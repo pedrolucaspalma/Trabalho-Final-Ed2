@@ -24,6 +24,10 @@ def menu(olympics):
                 country_name = ""
             case 5: 
                 olympics.visualize()
+            case 6:
+                olympics.print_nodes_names_in_terminal("country")
+            case 7:
+                olympics.print_nodes_names_in_terminal("discipline")
 
             
 
@@ -35,8 +39,10 @@ def print_options(discipline_name, country_name):
     print(f'2-Definir País. Atual: {country_name}') if country_name != "" else print(f'2-Definir País')
     print("3-Mostrar Resultado de Busca")
     print("4-Limpar inputs anteriores")
-    print("\n")
+    print("")
     print("5-Mostrar grafo")
-    print("\n")
+    print("6-Listar paises")
+    print("7-Listar modalidades")
+    print("")
     print("0- Encerrar Programa.")
 

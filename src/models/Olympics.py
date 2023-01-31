@@ -86,6 +86,21 @@ class Olympics:
             for result in performance_results:
                 print(result)
 
+        def print_nodes_names_in_terminal(self, type_of_node: str):
+            node_list = []
+
+            if(type_of_node == "discipline"): 
+                node_list = self.disciplines
+            if(type_of_node == "country"): 
+                node_list = self.countries
+
+            print("********************************************")
+            for i in range(0, len(node_list), 2):
+                nodes = node_list[i: i+2]
+                for node in nodes:
+                    print(f'{node.name}')
+
+
 
         def find_node_bfs(self, node_name):
             """
