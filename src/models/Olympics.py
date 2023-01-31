@@ -72,9 +72,19 @@ class Olympics:
                 if discipline.name == discipline_name: return discipline
         
         def performance(self, country_name: str, discipline_name: str) -> None:
-            for i in self.results:
-                if i.discipline == discipline_name and i.country == country_name:
-                    print(i)
+            if(country_name =="" or discipline_name == ""): 
+                return print('Voce precisa escolher um pais e uma modalidade primeiro!')
+            
+            performance_results = []
+            for result in self.results:
+                if result.discipline.name == discipline_name and result.country.name == country_name:
+                    performance_results.push(result)
+
+            if(len(performance_results) == 0):
+                print(f'{country_name} nunca competiu em {discipline_name}.')
+
+            for result in performance_results:
+                print(result)
 
 
         def find_node_bfs(self, node_name):
